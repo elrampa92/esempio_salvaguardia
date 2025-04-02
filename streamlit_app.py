@@ -28,8 +28,8 @@ st.write(f"- Materiale: {scelta_menu1}")
 st.write(f"- Paese di origine: {scelta_menu2}")
 
 
-st.write(f"Quota iniziale: {quota_iniziale}")
-st.write(f"Quota disponibile: {quota_disponibile}")
+st.write(f"Quota iniziale: {quota_iniziale} tons")
+st.write(f"Quota disponibile: {quota_disponibile} tons")
 st.write(f"Percentuale disponibile: {percentuale_disponibile:.2f}%")
 
 if st.button("Genera PDF"):
