@@ -1,6 +1,8 @@
 import streamlit as st
 import random
 
+st.image("https://github.com/elrampa92/esempio_salvaguardia/blob/main/GetAttachmentThumbnail.jpg?raw=true", use_column_width=True)
+
 # Dati di esempio per i menu a tendina
 opzioni_menu1 = ["Coils a caldo/decapati", "Coils a freddo", "Coils zincati 4A", "Coils zincati 4B", "Coils preverniciati"]
 opzioni_menu2 = ["India", "Turchia", "Korea", "Taiwan", "Altri paesi terzi ..."]
