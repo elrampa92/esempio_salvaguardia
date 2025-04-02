@@ -37,15 +37,6 @@ if st.button("Genera PDF"):
     # Esempio (richiede l'installazione di reportlab):
     # from reportlab.pdfgen import canvas
     # c = canvas.Canvas("output.pdf")
-    # c.drawString(100, 750, f"Quota iniziale: {quota_iniziale} tons")
-    # c.drawString(100, 730, f"Quota disponibile: {quota_disponibile} tons")
-    # c.save()
-  
-if st.button("Genera PDF"):
-    # Qui dovresti inserire la logica per generare il PDF
-    # Esempio (richiede l'installazione di reportlab):
-    # from reportlab.pdfgen import canvas
-    # c = canvas.Canvas("output.pdf")
     # c.drawString(100, 750, f"Quota iniziale: {quota_iniziale}")
     # c.drawString(100, 730, f"Quota disponibile: {quota_disponibile}")
     # c.save()
