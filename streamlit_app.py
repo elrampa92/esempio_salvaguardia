@@ -1,4 +1,5 @@
 import streamlit as st
+import random
 
 # Dati di esempio per i menu a tendina
 opzioni_menu1 = ["Coils a caldo/decapati", "Coils a freddo", "Coils zincati 4A", "Coils zincati 4B", "Coils preverniciati"]
