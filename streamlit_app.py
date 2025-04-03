@@ -1,6 +1,8 @@
 import streamlit as st
 import random
 
+# Titolo dell'applicazione
+st.title("SALVAGUARDIA SEAWAY")
 st.image("https://github.com/elrampa92/esempio_salvaguardia/blob/main/GetAttachmentThumbnail.jpg?raw=true", use_column_width=True)
 
 # Dati di esempio per i menu a tendina
