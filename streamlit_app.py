@@ -1,5 +1,6 @@
 import streamlit as st
 import random
+import matplotlib.pyplot as plt
 
 # Titolo dell'applicazione
 st.title("SALVAGUARDIA SEAWAY")
