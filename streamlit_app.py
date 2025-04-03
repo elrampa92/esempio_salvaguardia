@@ -24,16 +24,28 @@ quota_disponibile = quota_iniziale - spesa
 percentuale_disponibile = (quota_disponibile / quota_iniziale) * 100
 
 
-# Visualizzazione delle scelte effettuate
-st.write("Hai selezionato:")
-st.write(f"- Materiale: {scelta_menu1}")
-st.write(f"- Paese di origine: {scelta_menu2}")
+# Divisione della pagina in due colonne
+col1, col2 = st.columns(2)
 
+# Colonna sinistra: informazioni testuali
+with col1:
+    st.write("Hai selezionato:")
+    st.write(f"- Menu 1: {scelta_menu1}")
+    st.write(f"- Menu 2: {scelta_menu2}")
+    st.write(f"- Menu 3: {scelta_menu3}")
 
-st.write(f"Quota iniziale: {quota_iniziale} tons")
-st.write(f"Quota utilizzata: {spesa} tons")
-st.write(f"Quota disponibile: {quota_disponibile} tons")
-st.write(f"Percentuale disponibile: {percentuale_disponibile:.2f}%")
+    st.write(f"Quota iniziale: {quota_iniziale}")
+    st.write(f"Quota disponibile: {quota_disponibile}")
+    st.write(f"Percentuale disponibile: {percentuale_disponibile:.2f}%")
+
+# Colonna destra: grafico a torta
+with col2:
+    # Creazione del grafico a torta
+    fig1, ax1 = plt.subplots()
+    ax1.pie([quota_disponibile, spesa], labels=["Disponibile", "Spesa"], colors=["green", "red"], autopct="%1.1f%%", startangle=90)
+    ax1.axis("equal")  # Assicura che la torta sia disegnata come un cerchio.
+
+    st.pyplot(fig1)
 
 # Barra di avanzamento
 st.progress(int(percentuale_disponibile))
