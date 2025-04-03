@@ -29,6 +29,7 @@ st.write(f"- Paese di origine: {scelta_menu2}")
 
 
 st.write(f"Quota iniziale: {quota_iniziale} tons")
+st.write(f"Quota utilizzata: {spesa} tons")
 st.write(f"Quota disponibile: {quota_disponibile} tons")
 st.write(f"Percentuale disponibile: {percentuale_disponibile:.2f}%")
 
