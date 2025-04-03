@@ -17,7 +17,7 @@ scelta_menu1 = st.selectbox("Tipo di materiale", opzioni_menu1)
 scelta_menu2 = st.selectbox("Paese di origine", opzioni_menu2)
 
 quota_iniziale = random.randint(5000, 66000)
-spesa = random.randint(3000, 29999)
+spesa = random.randint(3000, min(29999, quota_iniziale))
 quota_disponibile = quota_iniziale - spesa
 percentuale_disponibile = (quota_disponibile / quota_iniziale) * 100
 
@@ -31,6 +31,9 @@ st.write(f"- Paese di origine: {scelta_menu2}")
 st.write(f"Quota iniziale: {quota_iniziale} tons")
 st.write(f"Quota disponibile: {quota_disponibile} tons")
 st.write(f"Percentuale disponibile: {percentuale_disponibile:.2f}%")
+
+# Barra di avanzamento
+st.progress(int(percentuale_disponibile))
 
 if st.button("Genera PDF"):
     # Qui dovresti inserire la logica per generare il PDF
