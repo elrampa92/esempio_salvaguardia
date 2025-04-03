@@ -36,6 +36,14 @@ st.write(f"Percentuale disponibile: {percentuale_disponibile:.2f}%")
 # Barra di avanzamento
 st.progress(int(percentuale_disponibile))
 
+
+# Messaggio in base alla percentuale disponibile
+if percentuale_disponibile > 90:
+    st.markdown("<h3 style='color:red;'>ATTENZIONE, QUOTA CRITICA!</h3>", unsafe_allow_html=True)
+else:
+    st.markdown("<h3 style='color:green;'>QUOTA DISPONIBILE, NON CRITICA</h3>", unsafe_allow_html=True)
+
+
 if st.button("Genera PDF"):
     # Qui dovresti inserire la logica per generare il PDF
     # Esempio (richiede l'installazione di reportlab):
