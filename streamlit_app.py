@@ -32,7 +32,6 @@ with col1:
     st.write("Hai selezionato:")
     st.write(f"- Menu 1: {scelta_menu1}")
     st.write(f"- Menu 2: {scelta_menu2}")
-    st.write(f"- Menu 3: {scelta_menu3}")
 
     st.write(f"Quota iniziale: {quota_iniziale}")
     st.write(f"Quota disponibile: {quota_disponibile}")
